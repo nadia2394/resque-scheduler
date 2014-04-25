@@ -268,7 +268,7 @@ module Resque
       end
 
       def rufus_scheduler
-        @rufus_scheduler ||= Rufus::Scheduler.new
+        @rufus_scheduler ||= Rufus::Scheduler.start_new
       end
 
       # Stops old rufus scheduler and creates a new one.  Returns the new
